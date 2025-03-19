@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "uv.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "geom.h": "c"
+    }
+}

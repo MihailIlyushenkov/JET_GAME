@@ -1,0 +1,70 @@
+#file contains data of jets and weapons
+#commenst must be in the end of the file and begin with #
+#
+#$weapons section: (count of types of weapons in file)
+#   name
+#   dimentions of rect
+#   all mesh files in order:
+#       1. default image (engine off)
+#       2. with booster on
+#       3. with sustainer on
+#   settings:
+#       1.turn_coeff       
+#       2.self.maxlifetime (in seconds)
+#       3.enginedelay      (in seconds)
+#       4.booster_time     (in seconds)
+#       5.booster_force    
+#       6.sustainer_time   (in seconds)
+#       7.sustainer_force  
+#       8.drag_coeff 
+#       9.type (int 1, 2, or 3 for fox1, for2 or fox3)
+#
+#$user section: (count of players in file)
+#   name
+#   all mesh files in order:
+#       1. default image
+#       2. exploded
+#   dimentions of rect
+#   starting position
+#   weapons name:amount (sep is ',') or None
+#   settings:
+#       1.best_pref_speed
+#       2.thrust_coeff
+#       3.turn_coeff
+$weapons$
+2
+r77pd
+100 15
+data/assets/r77pd.png data/assets/r77pd_boost.png data/assets/r77pd_sust.png
+0.014 20 1 5 0.05 5 0.02 0.0001 1
+pyt5
+85 48
+data/assets/python5.png data/assets/python5_boost.png data/assets/python5.png
+0.04 20 0.5 5 0.05 0 0 0.0001 2
+
+$players$
+4
+user0
+data/assets/su57.png data/assets/explosion.png
+160 110
+0 0
+r77pd:8,pyt5:2
+5 0.1 0.025
+user1
+data/assets/mig-29.png data/assets/explosion.png
+105 65
+0 500
+r77pd:4,pyt5:2
+5 0.1 0.025
+user2
+data/assets/f22.png data/assets/explosion.png
+131 96
+500 0
+r77pd:6,pyt5:2
+5 0.1 0.025
+user3
+data/assets/f16.png data/assets/explosion.png
+105 65
+500 500
+r77pd:4,pyt5:4
+5 0.1 0.025
